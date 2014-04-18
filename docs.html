@@ -58,6 +58,74 @@ a:hover {
   font-size:90%;
   opacity:0.7;
 }
+
+/* Styling from old docs page */
+
+textarea.expanding {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Note: None of these rules are necessary to have this plugin work! */
+
+textarea {
+  padding: .5em;
+  background: #fff;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: .5em 0;
+}
+
+.exampleStaticWidth .expanding-wrapper {
+    width: 400px;
+}
+
+.exampleFonts textarea {
+  font-family: Arial;
+  color: orange;
+  letter-spacing: 2px;
+  font-style: italic;
+  font-size: 1.75em;
+}
+
+.exampleMinHeight textarea, .exampleMinHeight .expanding-clone {
+  min-height: 6em;
+}
+
+.exampleMaxHeight textarea, .exampleMaxHeight .expanding-clone {
+  max-height: 8em;
+}
+
+.exampleBorder textarea {
+    border: double 8px #333;
+    border-radius: 5px;
+}
+
+.exampleProportional .expanding-wrapper {
+    width: 50%;
+}
+.exampleProportional textarea,
+.exampleProportional .expanding-clone {
+    padding: 1em;
+    margin: 1em;
+}
+
+.exampleCentered .expanding-wrapper {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.exampleDestroy textarea {
+    height: 120px;
+}
+.exampleWrapOff textarea {
+  white-space: pre;
+  word-wrap: normal;
+}
 </style>
 
 <script type='text/javascript' src='libs/jquery-1.11.0.js'></script>
